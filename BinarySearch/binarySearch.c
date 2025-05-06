@@ -29,9 +29,9 @@ long BinarySearch_long(long *arr, long start, long end, long value) {
     long mid = (start + end) / 2;
     
     if (arr[mid] > value) {
-        return BinarySearch(arr, start, mid, value);
+        return BinarySearch_long(arr, start, mid, value);
     } else {
-        return BinarySearch(arr, mid, end, value);
+        return BinarySearch_long(arr, mid, end, value);
     }
 }
 
@@ -49,9 +49,9 @@ int BinarySearch1(int *arr, int start, int end, int value) {
     if (arr[mid] == value) {
         return mid;
     } else if (arr[mid] > value) {
-        return BinarySearch(arr, start, mid, value);
+        return BinarySearch1(arr, start, mid, value);
     } else {
-        return BinarySearch(arr, mid, end, value);
+        return BinarySearch1(arr, mid, end, value);
     }
 }
 
@@ -70,8 +70,8 @@ long BinarySearch1_long(long *arr, long start, long end, long value) {
     if (arr[mid] == value) {
         return mid;
     } else if (arr[mid] > value) {
-        return BinarySearch(arr, start, mid, value);
+        return BinarySearch1_long(arr, start, mid, value);
     } else {
-        return BinarySearch(arr, mid, end, value);
+        return BinarySearch1_long(arr, mid, end, value);
     }
 }
