@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "binarySearch.hpp"
+
 // Minimalizes number of comparisons
 template <typename T>
 long BinarySearch(T *arr, long start, long end, T value) {
