@@ -2,3 +2,5 @@
 *.o
 *.ali
 *.class
+
+*.txt
