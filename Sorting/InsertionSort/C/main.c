@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
         i++;
     }
 
-    insertionSort(array, len);
+    insertionSortDecreasing(array, len);
 
     if (print) {
         for (long i = 0; i < len; i++) {
